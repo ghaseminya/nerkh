@@ -1,0 +1,78 @@
+﻿body 
+{
+	margin: 0 auto;
+	padding: 0  auto;
+	font: normal 0.8em/1.4em Tahoma, Verdana, Arial, Georgia, sans-serif;
+	background: transparent url(../img/back-all.png) fixed;
+	text-align: center;
+	left:auto;
+	right:auto;
+}
+h1 {
+	font-size: 1.6em;
+	font-weight: normal;
+}
+.Layout
+{
+	border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    width: 802px;
+   height: 30px;
+}
+
+.td
+{
+    background: transparent url(../img/back.png) fixed;
+    width:720px;
+}
+
+.menu ul
+{
+     list-style:none;
+     padding-right:20px;
+}
+
+/*baraye menu bala*/
+#tab ul {
+          margin:0;
+          padding:0px 10px 0px 20px;
+          list-style:none;
+       }
+       
+    #tab li {
+      display:inline;
+      margin:0;
+      padding:0;
+            }
+            
+    #tab a {
+      float:right;
+      margin:0;
+      padding:0 0 0 0px;
+      text-decoration:none;
+          }
+          
+    #tab a span {
+      float:right;
+      display:block;
+      padding:5px 20px 4px 6px;
+      color:#FF7519;
+      font-family:Tahoma;
+      font-size:15px;
+     }
+  
+    #tab a:hover span 
+    {
+        font-size:15px;        
+        color:#FFBC59;
+      }
+
+
+.main
+{
+	height: 20px;
+	background: #bab9b1 url(../img/h2.png) center;
+	text-align: center;
+	border: 0;
+}

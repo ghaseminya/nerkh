@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      	xmlns:p="http://primefaces.org/ui">
+    
+<h:head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+    <title></title>
+    <link href="Styles/Style.css" rel="stylesheet" type="text/css" />               
+</h:head>
+<h:body>
+    <form id="form1" runat="server">
+        <center>
+    <table cellpadding="0" cellspacing="0" class="Layout">
+
+    <tr>
+    <td style="background-image:url(img/h1.png); height:148px" >
+    </td>  
+    </tr>
+
+     <tr >
+     <td  style="background-image:url(img/h11.png); height:15px;"  > 
+     <div id="tab">
+                     <ul>
+                           <li><a href="/irannerkh/faces/index.xhtml"><span> نرخ طلا و ارز</span></a> </li>
+                            <li><a href="/irannerkh/faces/coin.xhtml"><span>نرخ سکه</span></a> </li>
+                            <li><a href="/irannerkh/faces/webserv.xhtml"><span>وب سرویس‌های ما</span></a> </li>
+                            <li><a href="/irannerkh/faces/news.xhtml"><span> اخبار</span></a> </li>
+                            <li><a href="/irannerkh/faces/archive.xhtml"><span> آرشیو قیمت</span></a> </li>
+                            <li><a href="/irannerkh/faces/contact.xhtml"><span> ارتباط با ما</span></a> </li>
+        </ul>
+                </div>
+      </td>                 
+     </tr> 
+    <tr>
+     <td> 
+     <table width="802px">
+     <tr>
+     
+     <td class="td" dir="rtl">
+         <h:form>
+             <h:outputText id="adf"/>
+         </h:form>
+        
+        
+        
+        <h:form id="form1"> 
+            <p:dataTable id="jews1" var="jews1" value="#{nerkhBean.coin}" 
+                         selection="#{nerkhBean.selecetedcoin}" rowKey="jews1.id" selectionMode="single">  
+  
+        <f:facet name="header">  
+            جدول نرخ سکه
+        </f:facet>  
+  
+        <p:column headerText="نام">  
+            #{jews1.name}  
+        </p:column>  
+  
+        <p:column headerText="فروش">  
+            #{jews1.buy}  
+        </p:column>  
+  
+        <p:column headerText="خرید" >  
+            #{jews1.sell}  
+        </p:column>  
+  
+        <p:column headerText="شماره">  
+            #{jews1.id}  
+        </p:column>  
+  
+        <f:facet name="footer">  
+            <p:commandButton id="viewButton" value="نمایش" icon="ui-icon-search"  
+                     update=":form1:display1" oncomplete="jewDialog1.show()"/>  
+        </f:facet>  
+  
+    </p:dataTable>  
+  
+    <p:dialog id="dialog1" header="جزیات زیورآلات" widgetVar="jewDialog1" resizable="false"  
+              width="200" showEffect="clip" hideEffect="fold">  
+  
+        <h:panelGrid id="display1" columns="2" cellpadding="4">  
+  
+            <f:facet name="header">  
+                <p:graphicImage value="/images/jews/#{nerkhBean.selecetedcoin.id}.jpg"/>  
+            </f:facet>  
+  
+            <h:outputText value="نام:" />  
+            <h:outputText value="#{nerkhBean.selecetedcoin.name}" />  
+  
+            <h:outputText value="فروش:" />  
+            <h:outputText value="#{nerkhBean.selecetedcoin.buy}" />  
+  
+            <h:outputText value="خرید:" />  
+            <h:outputText value="#{nerkhBean.selecetedcoin.sell}" />  
+  
+            <h:outputText value="شماره:" />  
+            <h:outputText value="#{nerkhBean.selecetedcoin.id}" />  
+        </h:panelGrid>  
+    </p:dialog>  
+            <p:poll interval="60" listener="#{nerkhBean.set_Jew()}" update="jews1"/>
+        </h:form>
+        
+        
+        
+        
+        
+        
+        
+        
+      
+
+     </td>
+     <td valign="top" style="background-image:url(img/h3.png); padding-right:30px; height:200px;" >
+     <ul  class="menu">
+                            <li><a href="index.html"><span> <img src="img/m1.png" /> </span></a> </li>
+                            <li><a href="index.html"><span> <img src="img/m2.png" /> </span></a> </li>
+                             <li><a href="index.html"><span><img src="img/m3.png" /> </span></a> </li>
+     </ul>
+     
+      
+     </td>
+     </tr>
+  
+     </table>
+     
+     </td>
+     </tr>     
+ </table> 
+    <tr>
+    <td>
+
+    <table class="Layout">
+
+    <tr style="background:#fff; height:10px;">
+جمعه 24 شهریور 1391 - 19:
+    <td style=" padding-top: 3px; text-align: left; padding-left: 5px; font-weight:bold;  width: 170px;"  >
+
+گروه نرم‌افزاری ماهی
+   <br /> 
+   </td>
+
+   <td style="background: white url(img/mm.png) no-repeat; height: 103px; width: 10px;">  </td>
+
+    <td style=" padding-top: 3px; text-align: left; padding-left: 5px; color:Gray;">
+
+    </td>
+    </tr>
+
+    </table>
+  </td>
+  </tr>
+
+  <tr>
+  <td  style="background-image:url(img/f.png); height:29px">
+  
+  </td>
+  </tr>
+  
+
+        </center>
+    
+    </form>
+</h:body>
+</html>
+

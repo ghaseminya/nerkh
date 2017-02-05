@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      	xmlns:p="http://primefaces.org/ui">
+    
+<h:head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+    <title></title>
+    <link href="Styles/Style.css" rel="stylesheet" type="text/css" />               
+</h:head>
+<h:body>
+    <form id="form1" runat="server">
+        <center>
+    <table cellpadding="0" cellspacing="0" class="Layout">
+
+    <tr>
+    <td style="background-image:url(img/h1.png); height:148px" >
+    </td>  
+    </tr>
+
+     <tr >
+     <td  style="background-image:url(img/h11.png); height:15px;"  > 
+     <div id="tab">
+                     <ul>
+                            <li><a href="/irannerkh/faces/index.xhtml"><span> نرخ طلا و ارز</span></a> </li>
+                            <li><a href="/irannerkh/faces/coin.xhtml"><span>نرخ سکه</span></a> </li>
+                            <li><a href="/irannerkh/faces/webserv.xhtml"><span>وب سرویس‌های ما</span></a> </li>
+                            <li><a href="/irannerkh/faces/news.xhtml"><span> اخبار</span></a> </li>
+                            <li><a href="/irannerkh/faces/archive.xhtml"><span> آرشیو قیمت</span></a> </li>
+                            <li><a href="/irannerkh/faces/contact.xhtml"><span> ارتباط با ما</span></a> </li>
+        </ul>
+                </div>
+      </td>                 
+     </tr> 
+    <tr>
+     <td> 
+     <table width="802px">
+     <tr>
+     
+         <td class="td" dir="ltr" align="center">
+            
+<p:selectOneMenu value="">  
+            <f:selectItem itemLabel="روز" itemValue="" />  
+            <f:selectItem itemLabel="۱" itemValue="1" />  
+            <f:selectItem itemLabel="۲" itemValue="2" />  
+            <f:selectItem itemLabel="۳" itemValue="3" />  
+            <f:selectItem itemLabel="۴" itemValue="4" />  
+            <f:selectItem itemLabel="۵" itemValue="5" />  
+            <f:selectItem itemLabel="۶" itemValue="6" />  
+            <f:selectItem itemLabel="۷" itemValue="7" />  
+            <f:selectItem itemLabel="۸" itemValue="8" />  
+            <f:selectItem itemLabel="۹" itemValue="9" />  
+            <f:selectItem itemLabel="۱۰" itemValue="10" />  
+            <f:selectItem itemLabel="۱۱" itemValue="11" />  
+            <f:selectItem itemLabel="۱۲" itemValue="12" />  
+            <f:selectItem itemLabel="۱۳" itemValue="13" />  
+            <f:selectItem itemLabel="۱۴" itemValue="14" />  
+            <f:selectItem itemLabel="۱۵" itemValue="15" />  
+            <f:selectItem itemLabel="۱۶" itemValue="16" />
+            <f:selectItem itemLabel="۱۷" itemValue="17" />  
+            <f:selectItem itemLabel="۱۸" itemValue="18" />  
+            <f:selectItem itemLabel="۱۹" itemValue="19" />  
+            <f:selectItem itemLabel="۲۰" itemValue="20" />  
+            <f:selectItem itemLabel="۲۱" itemValue="21" />  
+            <f:selectItem itemLabel="۲۲" itemValue="22" />
+            <f:selectItem itemLabel="۲۳" itemValue="23" />  
+            <f:selectItem itemLabel="۲۴" itemValue="24" />  
+            <f:selectItem itemLabel="۲۵" itemValue="25" />  
+            <f:selectItem itemLabel="۲۶" itemValue="26" />  
+            <f:selectItem itemLabel="۲۷" itemValue="27" />  
+            <f:selectItem itemLabel="۲۸" itemValue="28" />  
+            <f:selectItem itemLabel="۲۹" itemValue="29" />  
+            <f:selectItem itemLabel="۳۰" itemValue="30" />  
+            <f:selectItem itemLabel="۳۱" itemValue="31" />  
+        </p:selectOneMenu>  
+<p:selectOneMenu value="">  
+            <f:selectItem itemLabel="ماه" itemValue="" />  
+            <f:selectItem itemLabel="فروردین" itemValue="1" />  
+            <f:selectItem itemLabel="اردیبهشت" itemValue="2" />  
+            <f:selectItem itemLabel="خرداد" itemValue="3" />  
+            <f:selectItem itemLabel="تیر" itemValue="4" />  
+            <f:selectItem itemLabel="مرداد" itemValue="5" />  
+            <f:selectItem itemLabel="شهریور" itemValue="6" />  
+            <f:selectItem itemLabel="مهر" itemValue="7" />  
+            <f:selectItem itemLabel="آبان" itemValue="8" />  
+            <f:selectItem itemLabel="آذر" itemValue="9" />  
+            <f:selectItem itemLabel="دی" itemValue="10" />  
+            <f:selectItem itemLabel="بهمن" itemValue="11" />  
+            <f:selectItem itemLabel="اسفند" itemValue="12" />  
+        </p:selectOneMenu>  
+<p:selectOneMenu value="">  
+            <f:selectItem itemLabel="سال" itemValue="" />  
+            <f:selectItem itemLabel="۱۳۹۱" itemValue="1391" />  
+        </p:selectOneMenu>  
+        نرخ مورد نظر
+<p:selectOneMenu value="">  
+            <f:selectItem itemLabel="نرخ مورد نظر" itemValue="" />  
+            <f:selectItem itemLabel="سکه تمام" itemValue="1391" />  
+        </p:selectOneMenu>  
+        <p:button value="محاسبه"/>
+        <p:inputText value="۰"/>
+     </td>
+     <td valign="top" style="background-image:url(img/h3.png); padding-right:30px; height:200px;" >
+     <ul  class="menu">
+                            <li><a href="index.html"><span> <img src="img/m1.png" /> </span></a> </li>
+                            <li><a href="index.html"><span> <img src="img/m2.png" /> </span></a> </li>
+                             <li><a href="index.html"><span><img src="img/m3.png" /> </span></a> </li>
+     </ul>
+     
+      
+     </td>
+     </tr>
+  
+     </table>
+     
+     </td>
+     </tr>     
+ </table> 
+    <tr>
+    <td>
+
+    <table class="Layout">
+
+    <tr style="background:#fff; height:10px;">
+جمعه 24 شهریور 1391 - 19:
+    <td style=" padding-top: 3px; text-align: left; padding-left: 5px; font-weight:bold;  width: 170px;"  >
+
+گروه نرم‌افزاری ماهی
+   <br /> 
+   </td>
+
+   <td style="background: white url(img/mm.png) no-repeat; height: 103px; width: 10px;">  </td>
+
+    <td style=" padding-top: 3px; text-align: left; padding-left: 5px; color:Gray;">
+
+    </td>
+    </tr>
+
+    </table>
+  </td>
+  </tr>
+
+  <tr>
+  <td  style="background-image:url(img/f.png); height:29px">
+  
+  </td>
+  </tr>
+  
+
+        </center>
+    
+    </form>
+</h:body>
+</html>
